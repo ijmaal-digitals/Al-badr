@@ -74,7 +74,7 @@ img {
 
 .topbar {
 border-bottom: 1px solid rgba(75, 46, 36, 0.08);
-background: rgba(255, 254, 251, 0.72);
+background: var(--background);
 backdrop-filter: blur(10px);
 }
 
@@ -102,7 +102,7 @@ color: var(--primary);
     position: sticky;
     top: 0;
     z-index: 99;
-background: #FFFEFB;
+background: var(--background);
 backdrop-filter: blur(14px);
 border-bottom: 1px solid rgba(75, 46, 36, 0.1);
 }
@@ -126,6 +126,7 @@ display: block;
 width: clamp(150px, 18vw, 190px);
 height: auto;
 object-fit: contain;
+background: transparent;
 }
 
 .desktop-nav {

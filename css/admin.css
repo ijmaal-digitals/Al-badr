@@ -4,12 +4,12 @@ body{background:var(--bg);color:var(--text);font-family:"IBM Plex Sans Arabic","
 html[lang=en] body{font-family:"Plus Jakarta Sans","IBM Plex Sans Arabic",sans-serif}
 button,input,select{font:inherit;color:inherit}
 .a-login{max-width:380px;margin:12vh auto;padding:32px;background:var(--card);border:1px solid var(--line);border-radius:20px;display:grid;gap:14px;text-align:center}
-.a-logo{display:block;width:150px;height:auto;object-fit:contain}
+.a-logo{display:block;width:150px;height:auto;object-fit:contain;background:transparent}
 .a-login .a-logo{margin:0 auto}
 .a-top .a-logo{width:140px}
 .a-login h1{font-size:1.4rem;color:var(--gold2)}
 .a-login .err{color:var(--bad);min-height:1.2em;font-size:.9rem}
-.a-top{display:flex;align-items:center;gap:12px;padding:14px 24px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;flex-wrap:wrap}
+.a-top{display:flex;align-items:center;gap:12px;padding:14px 24px;background:var(--bg);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;flex-wrap:wrap}
 .a-top h1{font-size:1.1rem;color:var(--gold2);margin-inline-end:auto}
 .a-tabs{display:flex;gap:4px;padding:10px 24px 0;overflow-x:auto;border-bottom:1px solid var(--line);background:var(--bg2)}
 .a-tabs button{background:none;border:0;padding:10px 16px;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;font-weight:600}
