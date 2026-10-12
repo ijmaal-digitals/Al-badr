@@ -1,0 +1,11 @@
+{
+  "name": "albadr-elite-dental",
+  "version": "1.0.0",
+  "description": "Al Badr Elite Dental - website and booking backend (zero dependencies)",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node server/test.js"
+  }
+}
