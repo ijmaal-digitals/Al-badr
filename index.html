@@ -96,11 +96,23 @@
                         <div class="ba-handle"></div>
                     </div>
                 </div>
-                <div>
-                    <h2 data-ar="فريق الأطباء" data-en="Our Doctors">فريق الأطباء</h2>
-                    <div class="card reveal"><img class="doctor-avatar" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80" alt="Doctor"><h3 data-ar="د. سارة الحربي" data-en="Dr. Sarah Alharbi">د. سارة الحربي</h3><p class="muted" data-ar="استشارية تجميل الأسنان والفينيرز" data-en="Consultant of Cosmetic Dentistry & Veneers">استشارية تجميل الأسنان والفينيرز</p></div>
-                    <div class="card reveal"><img class="doctor-avatar" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80" alt="Doctor"><h3 data-ar="د. خالد الغامدي" data-en="Dr. Khalid Alghamdi">د. خالد الغامدي</h3><p class="muted" data-ar="استشاري زراعة الأسنان وجراحة الفم" data-en="Consultant of Implantology & Oral Surgery">استشاري زراعة الأسنان وجراحة الفم</p></div>
-                    <a class="btn btn-ghost" href="doctors.html" data-ar="عرض الفريق الكامل" data-en="View Full Team">عرض الفريق الكامل</a>
+                <div class="home-doctors">
+                    <div class="doctor-carousel-heading">
+                        <h2 data-ar="فريق الأطباء" data-en="Our Doctors">فريق الأطباء</h2>
+                        <div class="doctor-carousel-controls">
+                            <button type="button" class="doctor-carousel-prev" aria-label="السابق" data-ar-label="السابق" data-en-label="Previous">›</button>
+                            <button type="button" class="doctor-carousel-next" aria-label="التالي" data-ar-label="التالي" data-en-label="Next">‹</button>
+                        </div>
+                    </div>
+                    <div class="doctor-carousel-track" id="doctorCarouselTrack" aria-label="فريق الأطباء">
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-1.jpg" alt="صورة الطبيب الأول"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 1 - الاسم يضاف لاحقاً" data-en="Doctor 1 - Name coming soon">الطبيب 1 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="استشاري زراعة الأسنان وجراحة الفم" data-en="Consultant of Implantology & Oral Surgery">استشاري زراعة الأسنان وجراحة الفم</p></div></article>
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-2.jpg" alt="صورة الطبيب الثاني"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 2 - الاسم يضاف لاحقاً" data-en="Doctor 2 - Name coming soon">الطبيب 2 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="أخصائية الفينير وتجميل الأسنان" data-en="Veneers & Cosmetic Specialist">أخصائية الفينير وتجميل الأسنان</p></div></article>
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-placeholder.svg" alt="صورة افتراضية للطبيب الثالث"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 3 - الاسم يضاف لاحقاً" data-en="Doctor 3 - Name coming soon">الطبيب 3 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="أخصائي تقويم الأسنان" data-en="Orthodontist">أخصائي تقويم الأسنان</p></div></article>
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-placeholder.svg" alt="صورة افتراضية للطبيب الرابع"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 4 - الاسم يضاف لاحقاً" data-en="Doctor 4 - Name coming soon">الطبيب 4 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="أخصائية علاج الجذور" data-en="Endodontic Specialist">أخصائية علاج الجذور</p></div></article>
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-placeholder.svg" alt="صورة افتراضية للطبيب الخامس"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 5 - الاسم يضاف لاحقاً" data-en="Doctor 5 - Name coming soon">الطبيب 5 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="أخصائية أسنان الأطفال" data-en="Pediatric Dentist">أخصائية أسنان الأطفال</p></div></article>
+                        <article class="card doctor-slide"><img class="doctor-avatar" src="assets/doctor-placeholder.svg" alt="صورة افتراضية للطبيب السادس"><div class="doctor-slide-copy"><h3 data-ar="الطبيب 6 - الاسم يضاف لاحقاً" data-en="Doctor 6 - Name coming soon">الطبيب 6 - الاسم يضاف لاحقاً</h3><p class="muted" data-ar="أخصائي التجميل والترميمات" data-en="Cosmetic & Restorative">أخصائي التجميل والترميمات</p></div></article>
+                    </div>
+                    <a class="btn btn-ghost doctor-team-link" href="doctors.html" data-ar="عرض الفريق الكامل" data-en="View Full Team">عرض الفريق الكامل</a>
                 </div>
             </div>
         </section>
@@ -137,5 +149,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/widgets.js"></script>
+    <script src="js/doctors-carousel.js"></script>
 </body>
 </html>

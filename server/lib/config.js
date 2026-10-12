@@ -35,12 +35,12 @@ const PRICES = { implants: 3999, veneers: 1500, orthodontics: 6000, whitening: 9
 Object.keys(SERVICES).forEach((k) => { SERVICES[k].price = PRICES[k]; SERVICES[k].active = true; });
 
 const DOCTORS = {
-  khalid: { name_ar: 'د. خالد الغامدي', name_en: 'Dr. Khalid Alghamdi', title_ar: 'استشاري زراعة الأسنان', title_en: 'Implant Consultant', services: ['implants', 'checkup', 'cosmetic'], calendarId: env.CAL_KHALID || '', week: WEEK_DEFAULT },
-  sarah: { name_ar: 'د. سارة الحربي', name_en: 'Dr. Sarah Alharbi', title_ar: 'أخصائية الفينير وتجميل الأسنان', title_en: 'Veneers & Cosmetic Specialist', services: ['veneers', 'cosmetic', 'whitening', 'checkup'], calendarId: env.CAL_SARAH || '', week: WEEK_DEFAULT },
-  rayan: { name_ar: 'د. ريان الشهري', name_en: 'Dr. Rayan Alshahri', title_ar: 'أخصائي تقويم الأسنان', title_en: 'Orthodontist', services: ['orthodontics', 'checkup'], calendarId: env.CAL_RAYAN || '', week: WEEK_DEFAULT },
-  lina: { name_ar: 'د. لينا التميمي', name_en: 'Dr. Lina Altamimi', title_ar: 'أخصائية علاج الجذور', title_en: 'Endodontist', services: ['root-canal', 'checkup'], calendarId: env.CAL_LINA || '', week: WEEK_DEFAULT },
-  huda: { name_ar: 'د. هدى السبيعي', name_en: 'Dr. Huda Alsobaei', title_ar: 'أخصائية أسنان الأطفال', title_en: 'Pediatric Dentist', services: ['pediatric', 'checkup'], calendarId: env.CAL_HUDA || '', week: WEEK_DEFAULT },
-  nasser: { name_ar: 'د. ناصر الدوسري', name_en: 'Dr. Nasser Aldosari', title_ar: 'أخصائي التجميل والترميمات', title_en: 'Cosmetic & Restorative', services: ['cosmetic', 'whitening', 'checkup', 'veneers'], calendarId: env.CAL_NASSER || '', week: WEEK_DEFAULT },
+  khalid: { name_ar: 'الطبيب 1 - الاسم يضاف لاحقاً', name_en: 'Doctor 1 - Name coming soon', title_ar: 'استشاري زراعة الأسنان', title_en: 'Implant Consultant', services: ['implants', 'checkup', 'cosmetic'], calendarId: env.CAL_KHALID || '', week: WEEK_DEFAULT },
+  sarah: { name_ar: 'الطبيب 2 - الاسم يضاف لاحقاً', name_en: 'Doctor 2 - Name coming soon', title_ar: 'أخصائية الفينير وتجميل الأسنان', title_en: 'Veneers & Cosmetic Specialist', services: ['veneers', 'cosmetic', 'whitening', 'checkup'], calendarId: env.CAL_SARAH || '', week: WEEK_DEFAULT },
+  rayan: { name_ar: 'الطبيب 3 - الاسم يضاف لاحقاً', name_en: 'Doctor 3 - Name coming soon', title_ar: 'أخصائي تقويم الأسنان', title_en: 'Orthodontist', services: ['orthodontics', 'checkup'], calendarId: env.CAL_RAYAN || '', week: WEEK_DEFAULT },
+  lina: { name_ar: 'الطبيب 4 - الاسم يضاف لاحقاً', name_en: 'Doctor 4 - Name coming soon', title_ar: 'أخصائية علاج الجذور', title_en: 'Endodontist', services: ['root-canal', 'checkup'], calendarId: env.CAL_LINA || '', week: WEEK_DEFAULT },
+  huda: { name_ar: 'الطبيب 5 - الاسم يضاف لاحقاً', name_en: 'Doctor 5 - Name coming soon', title_ar: 'أخصائية أسنان الأطفال', title_en: 'Pediatric Dentist', services: ['pediatric', 'checkup'], calendarId: env.CAL_HUDA || '', week: WEEK_DEFAULT },
+  nasser: { name_ar: 'الطبيب 6 - الاسم يضاف لاحقاً', name_en: 'Doctor 6 - Name coming soon', title_ar: 'أخصائي التجميل والترميمات', title_en: 'Cosmetic & Restorative', services: ['cosmetic', 'whitening', 'checkup', 'veneers'], calendarId: env.CAL_NASSER || '', week: WEEK_DEFAULT },
 };
 
 module.exports = {

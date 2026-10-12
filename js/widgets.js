@@ -54,6 +54,19 @@
         };
     }
 
+    var siteFooter = document.querySelector('.footer');
+    if (siteFooter && !siteFooter.querySelector('.footer-brand-row')) {
+        var brandRow = document.createElement('div');
+        brandRow.className = 'container footer-brand-row';
+        brandRow.innerHTML = '<a class="footer-brand" href="/" aria-label="Al Badr Elite Dental"><img src="/assets/logo.png" alt="البدر ايليت لطب الأسنان | Al Badr Elite Dental"></a>' +
+            '<a class="footer-admin-link" href="/admin.html" data-ar="دخول الإدارة" data-en="Admin login">' + (lang() === 'en' ? 'Admin login' : 'دخول الإدارة') + '</a>';
+        siteFooter.appendChild(brandRow);
+        window.addEventListener('langchange', function () {
+            var link = brandRow.querySelector('.footer-admin-link');
+            link.textContent = lang() === 'en' ? 'Admin login' : 'دخول الإدارة';
+        });
+    }
+
     // Exit-intent offer popup
     var skip = { 'contact.html': 1, 'manage.html': 1 };
     if (skip[page] || localStorage.getItem(SUB_KEY)) { refresh(); return; }
